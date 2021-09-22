@@ -19,12 +19,16 @@ Change the hourly_employee_input instead of printing, return a statement and pri
 Include a docstring as your first line declaring what the function does.
 """
 
+"""asks the user for a name (string), hours worked (int) and an hourly pay rate (float) and prints a string including the information."""
 
+def weekly_pay(hours_worked, pay_rate):
+    return hours_worked * pay_rate
 def hourly_employee_input():
     name = str(input('Name? '))
     hours_worked = int(input('Hours worked? '))
     pay_rate = float(input('Pay rate? '))
-    print(f'Hello {name}, you worked {hours_worked} hours at ${pay_rate} per hour.')
+    weekly_pay(hours_worked, pay_rate)
+    print(f'Hello {name}, you worked {hours_worked} hours at ${pay_rate} per hour. You made {total_pay}')
 
 if __name__ == '__main__':
     hourly_employee_input()
