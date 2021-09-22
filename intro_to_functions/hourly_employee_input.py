@@ -19,7 +19,7 @@ Call the function, entering bad input (letters, symbols)
 What do you need to add to your function for bad input? Handle the bad input
 """
 
-
+"""asks the user for a name (string), hours worked (int) and an hourly pay rate (float) and prints a string including the information."""
 def hourly_employee_input():
     name = str(input('Name? '))
     hours_worked = float(input('Hours worked? '))
